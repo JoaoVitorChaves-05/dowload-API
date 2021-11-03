@@ -1,7 +1,9 @@
 var express = require('express');
 var app = express();
+
 const ytdl = require('ytdl-core');
 
+const PORT = process.env.PORT || 3000
 
 // respond with "hello world" when a GET request is made to the homepage
 app.get('/', async function(req, res) {
@@ -17,4 +19,4 @@ app.get('/', async function(req, res) {
     
 });
 
-app.listen(3000)
+app.listen(PORT)
