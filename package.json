@@ -1,0 +1,24 @@
+{
+  "name": "download-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "ytdl-core": "^4.9.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoaoVitorChaves-05/dowload-API.git"
+  },
+  "author": "Joao Vitor Chaves",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JoaoVitorChaves-05/dowload-API/issues"
+  },
+  "homepage": "https://github.com/JoaoVitorChaves-05/dowload-API#readme"
+}
