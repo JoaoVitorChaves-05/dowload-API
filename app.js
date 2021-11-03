@@ -8,11 +8,13 @@ const PORT = process.env.PORT || 3000
 // respond with "hello world" when a GET request is made to the homepage
 app.get('/', async function(req, res) {
     try {
-        const {url} = req.query
+        const baseURL = "https://youtube.com/watch?v="
+        const {id} = req.query
+        const {title} = req.query
 
         const data = Date.now()
-        res.header("Content-Disposition", "attachment; filename=" + "music.mp3")
-        return ytdl(url).pipe(res)
+        res.header("Content-Disposition", "attachment; filename=" + title + ".mp3")
+        return ytdl(baseURL + id).pipe(res)
     } catch (err) {
         console.log(err)
     }
