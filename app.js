@@ -12,13 +12,20 @@ app.get('/', async function(req, res) {
         const {id} = req.query
         const {title} = req.query
 
-        const data = Date.now()
+        let info = await ytdl.getInfo(id);
+        let format = ytdl.chooseFormat(info.formats, { quality: '140' });
+        console.log('Format found!', format);
+        
         res.header("Content-Disposition", "attachment; filename=" + title + ".mp3")
-        return ytdl(baseURL + id).pipe(res)
+        return ytdl(baseURL + id, { format: format}).pipe(res)
+
     } catch (err) {
         console.log(err)
     }
     
 });
+
+// 192.168.15.1:3000/?id=zDCxqciBDC8&title=gestos
+
 
 app.listen(PORT)
