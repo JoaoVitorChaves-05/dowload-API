@@ -18,15 +18,15 @@ To set up the project locally, follow these steps:
 
 1. Clone this repository: `git clone https://github.com/JoaoVitorChaves-05/dowload-API.git`
 2. Navigate to the project directory: `cd dowload-API`
-3. Install dependencies: [insert any specific installation steps, if applicable].
+3. Install dependencies: `npm install`.
 
 ## Usage
 
 After setting up the project, follow these instructions to use the API:
 
-1. [Describe how to start/run the API].
-2. [Provide API documentation if available].
-3. [Include sample API requests/responses if helpful].
+1. You need to install the ffmpeg.
+2. After, add the ffmpeg to the PATH.
+3. In project directory, run: `npm start`.
 
 ## Contribution
 
@@ -40,9 +40,9 @@ If you want to contribute to this project, follow these steps:
 
 ## License
 
-This project is licensed under the [mention the type of license]. Refer to the LICENSE file for more details.
+This project is licensed under the MIT License. Refer to the LICENSE file for more details.
 
 ## Contact
 
-For more information or inquiries about the project, please contact [João Vitor Mâncio Chaves](https://github.com/JoaoVitorChaves-05).
+For more information or inquiries about the project, please contact [João Vitor Mâncio Chaves](joaovmanciochaves@gmail.com).
 
