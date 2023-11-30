@@ -1,6 +1,6 @@
 # Download API
 
-This repository contains an API for file downloading built with [mention the technology/stack used].
+This repository contains an API for file downloading built with Node.js.
 
 ## Description
 
